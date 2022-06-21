@@ -5,7 +5,10 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElUpload: typeof import('element-plus/es')['ElUpload']
     NButton: typeof import('naive-ui')['NButton']
+    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
     NSpace: typeof import('naive-ui')['NSpace']
     NUpload: typeof import('naive-ui')['NUpload']
   }
